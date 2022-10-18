@@ -37,7 +37,7 @@
 }
 
 .container__conteudo-skills-icone {
-    height: 5rem;
+    height: 4rem;
 }
 
 .skills-icone-legenda {
@@ -53,5 +53,11 @@
         background-color: var(--branco-roxeado);
         border-bottom: 1px dashed lightgrey;
         border-radius: 10px 10px 0 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container__conteudo-sobre-descricao {
+        max-width: 600px;
     }
 }
