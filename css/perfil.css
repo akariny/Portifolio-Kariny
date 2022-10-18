@@ -1,0 +1,44 @@
+.container__conteudo-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.container__conteudo-imagem {
+    width: 9rem;
+}
+
+.container__conteudo-nome {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: .8rem;
+    color: var(--cinza-escuro);
+}
+
+.container__conteudo-descricao {
+    font-size: .8rem;
+    width: 90%;
+    max-width: 250px;
+    margin-bottom: .8rem;
+    text-align: center;
+    line-height: 1.2rem;
+    color: var(--cinza-claro);
+
+    border-bottom: 1px solid #b1b3b4;
+}
+
+.container__conteudo-contato {
+    display: flex;
+}
+.container__conteudo-icone-contato {
+    width: 2rem;
+    margin: 0 .5rem;
+}
+
+@media screen and (min-width:768px) {
+    .container__conteudo-perfil {
+        margin: 0 0 0 .8rem;
+        border-radius: 10px;
+    }
+}

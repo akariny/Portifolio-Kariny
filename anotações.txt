@@ -1,0 +1,24 @@
+template de Inspiração: https://webflow.com/templates/html/denali-blog-website-template
+
+https://preview.webflow.com/preview/denali-template?utm_medium=preview_link&utm_source=dashboard&utm_content=denali-template&preview=d343a17fe002ad3b17f5669a6398fc6c&mode=preview
+
+-----------------------------
+
+https://www.figma.com/file/FidBn9f7BoBCoEs19EzbUD/Apeperia-Mobile-First?node-id=0%3A1
+
+Cores: 
+Lilas claro - #7a7a9e OU #a5a4e8
+Lilas - #8b68ac
+Branco roxeado - #f7f6ff
+Cinza escuro - #323232
+Azul claro - #9bdee7
+Azul claro 2 - #b1d5ed
+
+ULTILIZANDO O MODO MOBILE FIRST!
+
+----------------------------
+
+Descrição: Tenho 22 anos e sou nascida do Maranhão,
+me apaixonei por tecnologia em 2021 e desde então estudo bastante para ser uma 
+futura Desenvolvedora Full Stack!
+

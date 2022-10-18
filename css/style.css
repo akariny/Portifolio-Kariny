@@ -1,0 +1,105 @@
+/*MOBILE FIRST*/
+:root {
+    --branco-roxeado: #f7f6ff;
+    --branco-azulado: #e9eff5;
+    --cinza-claro: #5a5959;
+    --cinza-escuro: #323232;
+    --bg-pagina: #b1d5ed;
+
+    --lato: 'Lato' , sans-serif;
+}
+
+body {
+    font-family: var(--lato);
+    background-color: var(--bg-pagina);
+}
+/*CABEÇALHO*/
+.cabecalho {
+    background-color: var(--branco-roxeado);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cabecalho__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 .8rem 0;
+    color: var(--cinza-escuro);
+}
+
+.cabecalho__lista {
+    text-align: center;
+}
+
+.cabecalho__lista-item {
+    display: inline-block;
+    margin: 2px .2rem;
+}
+
+.cabecalho__lista-item a {
+    color: var(--cinza-claro);
+    text-decoration: none;
+}
+
+
+/*DIVISÃO ITENS*/
+.container__conteudo {
+    display: grid;
+    grid-template-rows: auto auto 2fr;
+    margin-bottom: 20px;
+}
+
+.container__conteudo-perfil {
+    background-color: var(--branco-roxeado);
+    height: auto;
+}
+
+.container__conteudo-sobre {
+    background-color: var(--branco-azulado);
+}
+
+.container__conteudo-posts {
+    background-color: var(--branco-roxeado);
+    height: auto;
+}
+
+/*RODAPE*/
+.rodape {
+    text-align: center;
+    font-size: .7rem;
+    margin-bottom: .5rem;
+    color: var(--cinza-escuro);
+}
+
+/*RESPONSIVO CABEÇALHO, GRID E RODAPE*/
+/*NO GRID SOMENTE A POSIÇÃO, ITENS EM SEUS RESPECTIVOS ARQUIVOS CSS*/
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__title {
+        margin: 0;
+    }
+    .container__conteudo {
+        grid-template-rows: none;
+        grid-template-columns: 1fr 2fr;
+        
+    }
+
+    .container__conteudo-perfil {
+        max-height: 370px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container__conteudo {
+        grid-template-columns: 300px 2fr;
+    }
+}
