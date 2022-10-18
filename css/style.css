@@ -90,7 +90,6 @@ body {
     .container__conteudo {
         grid-template-rows: none;
         grid-template-columns: 1fr 2fr;
-        
     }
 
     .container__conteudo-perfil {
@@ -100,6 +99,6 @@ body {
 
 @media screen and (min-width: 1024px) {
     .container__conteudo {
-        grid-template-columns: 300px 2fr;
+        grid-template-columns: 270px 2fr;
     }
 }
