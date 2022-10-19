@@ -40,5 +40,7 @@
     .container__conteudo-perfil {
         margin: 0 0 0 .8rem;
         border-radius: 10px;
+        padding-top: 1rem;
+        padding-bottom: 0;
     }
 }
