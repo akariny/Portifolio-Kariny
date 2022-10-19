@@ -13,13 +13,15 @@
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/posts.css">
+    <link rel="stylesheet" href="css/formulario.css">
 </head>
+
 <body>
     <header class="cabecalho">
         <h1 class="cabecalho__title">Portifólio</h1>
         <nav class="cabecalho__nav">
             <ul class="cabecalho__lista">
-                <li class="cabecalho__lista-item"><a href="#">Sobre Mim</a></li>
+                <li class="cabecalho__lista-item"><a href="#Sobre Mim">Sobre Mim</a></li>
                 <li class="cabecalho__lista-item"><a href="#">Projetos</a></li>
                 <li class="cabecalho__lista-item"><a href="#">Contato</a></li>
             </ul>
@@ -139,6 +141,35 @@
             </div>
         </section>
     </main>
+
+    <div class="container__contato">
+        <h1 class=container__contato-titulo>Entre em Contato Comigo!</h1>
+
+        <div class="container__contato-itens">
+            <div class="container__contato-img-div">
+                <img src="img/contato.png" alt="Foto de um Telefone" class="container__contato-img">
+            </div>
+    
+            <div class="container__contato-formulario">
+                <form action="mailto:anakariny10@gmail.com">
+                    <label for="nome" class="formulario_label">Nome</label> <br>
+                    <input type="text" id="nome" class="formulario_input" required><br>
+    
+                    <label for="email" class="formulario_label">Email</label> <br>
+                    <input type="email" id="email" class="formulario_input" placeholder="email@email.com" required><br>
+    
+                    <label for="assunto" class="formulario_label">Assunto</label> <br>
+                    <input type="text" id="assunto" class="formulario_input" required><br>
+    
+                    <label for="mensagem" class="formulario_label">Mensagem</label> <br>
+                    <textarea name="" id="mensagem" class="formulario_textarea" required></textarea>
+    
+                    <input type="submit" value="Enviar" class="formulario-botao">
+                    <input type="reset" value="Limpar" class="formulario-botao">
+                </form>
+            </div>
+        </div>
+    </div>
 
     <footer class="rodape">
         <p>Desenvolvido por: Ana Kariny &copy; 2022 | Oracle Next Education T3 | Alura</p>
