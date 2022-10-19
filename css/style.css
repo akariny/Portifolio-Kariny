@@ -1,7 +1,7 @@
 /*MOBILE FIRST*/
 :root {
     --branco-roxeado: #f7f6ff;
-    --branco-azulado: #e9eff5;
+    --branco-azulado: #EAF2FD;
     --cinza-claro: #5a5959;
     --cinza-escuro: #323232;
     --bg-pagina: #b1d5ed;
@@ -12,6 +12,8 @@
 body {
     font-family: var(--lato);
     background-color: var(--bg-pagina);
+    background-image: url('../img/nuvem-branca2.png');
+    background-size: 250px;
 }
 /*CABEÇALHO*/
 .cabecalho {
@@ -20,7 +22,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 .cabecalho__title {
@@ -49,7 +51,7 @@ body {
 .container__conteudo {
     display: grid;
     grid-template-rows: auto auto 2fr;
-    margin-bottom: 20px;
+    margin-bottom: 2.5rem;
 }
 
 .container__conteudo-perfil {
@@ -58,7 +60,7 @@ body {
 }
 
 .container__conteudo-sobre {
-    background-color: var(--branco-azulado);
+    background-color: var(--branco-azulado)
 }
 
 .container__conteudo-posts {
@@ -66,12 +68,29 @@ body {
     height: auto;
 }
 
+/*FORMULARIO CONTATO*/
+.container__contato-titulo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: .5rem 0;
+    color: var(--cinza-escuro);
+}
+.container__contato {
+    background-color: var(--branco-azulado);
+}
+.container__contato-formulario {
+    padding: 1rem;
+    border-bottom: 1px solid lightgray;
+}
+
 /*RODAPE*/
 .rodape {
+    background-color: var(--branco-roxeado);
     text-align: center;
-    font-size: .7rem;
-    margin-bottom: .5rem;
+    font-size: .6rem;
     color: var(--cinza-escuro);
+    padding: 2rem;
 }
 
 /*RESPONSIVO CABEÇALHO, GRID E RODAPE*/
