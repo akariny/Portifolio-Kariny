@@ -41,9 +41,7 @@
     transition: 0.5s;
 }
 
-.container__conteudo-skills-icone:hover {
-    height: 4.5rem;
-}
+
 
 .skills-icone-legenda {
     color: var(--cinza-claro);
@@ -63,5 +61,9 @@
 @media screen and (min-width: 1024px) {
     .container__conteudo-sobre-descricao {
         max-width: 600px;
+    }
+
+    .container__conteudo-skills-icone:hover {
+        height: 4.5rem;
     }
 }
