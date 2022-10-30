@@ -1,17 +1,17 @@
 .cabecalho {
+    align-items: center;
     background-color: var(--branco-roxeado);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 1.5rem;
     margin-bottom: 2.5rem;
+    padding: 1.5rem;
 }
 
 .cabecalho__title {
+    color: var(--cinza-escuro);
     font-size: 1.5rem;
     font-weight: 600;
     margin: 0 0 .8rem 0;
-    color: var(--cinza-escuro);
 }
 
 .cabecalho__lista {
@@ -34,9 +34,9 @@
 
 @media screen and (min-width: 768px) {
     .cabecalho {
+        align-items: center;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
     }
 
     .cabecalho__title {

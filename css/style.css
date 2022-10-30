@@ -10,16 +10,16 @@
 }
 
 body {
-    font-family: var(--lato);
     background-color: var(--bg-pagina);
     background-image: url('../img/nuvem-branca2.png');
     background-size: 250px;
+    font-family: var(--lato);
 }
 
 /*DIVISÃO ITENS*/
 .container__conteudo {
     display: grid;
-    grid-template-rows: auto auto 2fr;
+    grid-template-rows: auto auto auto 2fr;
     margin-bottom: 2.5rem;
 }
 
@@ -37,40 +37,13 @@ body {
     height: auto;
 }
 
-/*FORMULARIO CONTATO*/
-/*TIRAR DAQUI DEPOIS*/
-.container__contato-titulo {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
-    padding: .5rem 0;
-    color: var(--cinza-escuro);
-}
-.container__contato {
-    background-color: var(--branco-azulado);
-}
-.container__contato-formulario {
-    padding: 1rem;
-    border-bottom: 1px solid lightgray;
-}
-
-
 /*RESPONSIVO GRID*/
 /*NO GRID SOMENTE A POSIÇÃO, ITENS EM SEUS RESPECTIVOS ARQUIVOS CSS*/
 
 @media screen and (min-width: 768px) {
-    .cabecalho {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .cabecalho__title {
-        margin: 0;
-    }
     .container__conteudo {
-        grid-template-rows: none;
         grid-template-columns: 1fr 2fr;
+        grid-template-rows: none;
     }
 
     .container__conteudo-perfil {

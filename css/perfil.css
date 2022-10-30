@@ -1,7 +1,7 @@
 .container__conteudo-perfil {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 1.5rem 0;
 }
 
@@ -10,22 +10,21 @@
 }
 
 .container__conteudo-nome {
+    color: var(--cinza-escuro);
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: .8rem;
-    color: var(--cinza-escuro);
 }
 
 .container__conteudo-descricao {
-    font-size: .8rem;
-    width: 90%;
-    max-width: 250px;
-    margin-bottom: .8rem;
-    text-align: center;
-    line-height: 1.2rem;
-    color: var(--cinza-claro);
-
     border-bottom: 1px solid #b1b3b4;
+    color: var(--cinza-claro);
+    font-size: .8rem;
+    line-height: 1.2rem;
+    margin-bottom: .8rem;
+    max-width: 250px;
+    text-align: center;
+    width: 90%;
 }
 
 .container__conteudo-bio {
@@ -49,8 +48,8 @@
     display: flex;
 }
 .container__conteudo-icone-contato {
-    width: 2rem;
     margin: 0 .5rem;
+    width: 2rem;
 }
 
 .container__conteudo-icone-contato:hover {
@@ -61,7 +60,7 @@
     .container__conteudo-perfil {
         height: auto;
         margin: 0 0 0 .8rem;
-        padding-top: 1rem;
         padding-bottom: 0;
+        padding-top: 1rem;
     }
 }

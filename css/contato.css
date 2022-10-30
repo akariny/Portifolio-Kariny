@@ -1,0 +1,90 @@
+.container__contato-titulo {
+    color: var(--cinza-escuro);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .5rem 0;
+    text-align: center;
+}
+.container__contato {
+    background-color: var(--branco-azulado);
+}
+
+.container__contato-itens {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container__contato-img-div {
+    background-image: url('../img/contato.png');
+    background-position: center;
+    background-size: cover;
+    display: none;
+    justify-content: center;
+    width: 30%;
+}
+
+.formulario-itens {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.formulario_label {
+    color: var(--cinza-claro);
+    font-size: .8rem;
+}
+
+.formulario_input {
+    border: none;
+    height: 2rem;
+}
+
+.formulario_textarea {
+    border: none;
+    height: 4rem; 
+    resize: none;
+}
+
+.formulario_input:focus, .formulario_textarea:focus {
+    border-bottom: 2px solid blue;
+    outline: 0;
+}
+
+.formulario-botao {
+    background: transparent;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 5px;
+    margin: .3rem .5rem;
+    padding: .5rem .8rem;
+}
+
+.formulario-botao:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .container__contato {
+        background: var(--branco-roxeado);
+        margin: 0 .8rem;
+    }
+
+    .container__contato-formulario {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .container__contato-img-div {
+        display: flex; 
+    }
+
+    .container__contato-formulario {
+        width: 60%;
+    }   
+}

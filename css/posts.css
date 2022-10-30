@@ -1,90 +1,99 @@
 .container__conteudo-posts {
-    text-align: center;
     padding: .5rem 0;
+    text-align: center;
 }
 
 .container__conteudo-titulo-post {
+    color: var(--cinza-escuro);
     font-size: 2rem;
     font-weight: 600;
-
-    color: var(--cinza-escuro);
 }
 
 .container__conteudo-card {
+    background: #FDFDFD;
+    border: 1px solid var(--cinza-claro);
     display: flex;
     flex-direction: column;
+    margin: .8rem auto;
+    max-width: 400px;
     padding: .5rem;
     width: 80%;
-    max-width: 400px;
-    margin: .8rem auto;
-
-    border: 1px solid var(--cinza-claro);
-    border-radius: 5px;
 }
 
 .container__conteudo-card-img {
+    background-position: center;
+    background-size: cover;
     height: 14rem;
+    width: 100%;
+}
+
+.forca {
+    background-image: url('../img/jogoDaForca.png');
+}
+
+.decodificador {
+    background-image: url('../img/decodificador.png');
 }
 
 .container__conteudo-card-descricao {
-    width: 85%;
-    text-align: center;
     margin: .8rem auto;
+    text-align: center;
+    width: 85%;
 }
 
 .card_titulo {
+    border-bottom: 1px solid var(--cinza-claro);
+    color: var(--cinza-escuro);
     font-size: 1.4rem ;
     font-weight: 600;
-    color: var(--cinza-escuro);
     margin-bottom: .5rem;
-
-    border-bottom: 1px solid var(--cinza-claro);
 }
 
 .card_descricao {
+    color: var(--cinza-claro); 
     font-size: .8rem;
     line-height: 1.2rem;
-    color: var(--cinza-claro); 
 }
 
 .container__conteudo-link {
-    text-align: center;
     margin-top: 2rem;
+    text-align: center;
 }
 
 .link {
-    text-decoration: none;
-    color: var(--cinza-escuro);
-    
-    padding: .5rem .8rem;
-    margin: 0 .8rem;
-
     border: 1px solid var(--cinza-claro);
     border-radius: 5px;
+    color: var(--cinza-escuro);
+    margin: 0 .8rem;
+    padding: .5rem .8rem;
+    text-decoration: none;
 }
 
 /*RESPONSIVO*/
+
 @media screen and (min-width: 768px) {
     .container__conteudo-posts {
         margin: 0 .8rem;
     }
     .container__conteudo-card {
-        width: 85%;
-        max-width: none;
-        flex-direction: row;
         align-items: center;
+        flex-direction: row;
+        max-width: none;
         padding: 0 .2rem;
+        width: 85%;
     }
 
     .container__conteudo-card-img {
-        height: 9rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;
     }
 
     .container__conteudo-card-descricao {
-        width: 40%;
-        text-align: start;
         margin: 0;
         padding: .8rem;
+        text-align: start;
+        width: 40%;
     }
 
     .card_descricao {
@@ -102,22 +111,26 @@
         font-size: .8rem;
         margin: 0 5px;
     }
+
+    .link:hover {
+        text-decoration: underline;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .container__conteudo-card {
-        padding: .5rem;
         max-width: 700px;
+        padding: .5rem;
     }
 
     .container__conteudo-card-img {
-        height: 12rem;
+        height: 15rem;
     }
 
     .container__conteudo-card-descricao {
-        width: 80%;
-        text-align: start;
         padding: 1.2rem;
+        text-align: start;
+        width: 80%;
     }
 
     .card_descricao {
