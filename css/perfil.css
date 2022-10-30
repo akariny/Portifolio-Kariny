@@ -28,15 +28,21 @@
     border-bottom: 1px solid #b1b3b4;
 }
 
-.container__conteudo-descricao:nth-child(5),
-.container__conteudo-descricao:nth-child(6),
-.container__conteudo-descricao:nth-child(7) {
-    border-bottom: none;
-    line-height: .8rem;
+.container__conteudo-bio {
+    color: var(--cinza-claro);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .8rem;
 }
 
-.container__conteudo-descricao:nth-child(8) {
-    line-height: .8rem;
+.bio-item {
+    display: flex;
+    margin: .2rem 0;
+}
+
+.bio-palavra {
+    font-size: .8rem;
+    margin-left: 10px;
 }
 
 .container__conteudo-contato {
