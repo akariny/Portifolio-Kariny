@@ -67,7 +67,6 @@
 @media screen and (min-width: 768px) {
     .container__conteudo-posts {
         margin: 0 .8rem;
-        border-radius: 0 0 10px 10px;
     }
     .container__conteudo-card {
         width: 85%;

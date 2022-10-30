@@ -28,6 +28,17 @@
     border-bottom: 1px solid #b1b3b4;
 }
 
+.container__conteudo-descricao:nth-child(5),
+.container__conteudo-descricao:nth-child(6),
+.container__conteudo-descricao:nth-child(7) {
+    border-bottom: none;
+    line-height: .8rem;
+}
+
+.container__conteudo-descricao:nth-child(8) {
+    line-height: .8rem;
+}
+
 .container__conteudo-contato {
     display: flex;
 }
@@ -36,10 +47,14 @@
     margin: 0 .5rem;
 }
 
+.container__conteudo-icone-contato:hover {
+    box-shadow: 1px 1px 5px var(--cinza-claro);
+}
+
 @media screen and (min-width:768px) {
     .container__conteudo-perfil {
+        height: auto;
         margin: 0 0 0 .8rem;
-        border-radius: 10px;
         padding-top: 1rem;
         padding-bottom: 0;
     }
