@@ -1,15 +1,15 @@
-.container__conteudo-posts {
+.projetos {
     padding: .5rem 0;
     text-align: center;
 }
 
-.container__conteudo-titulo-post {
+.projetos__titulo {
     color: var(--cinza-escuro);
     font-size: 2rem;
     font-weight: 600;
 }
 
-.container__conteudo-card {
+.projetos__card {
     background: #FDFDFD;
     border: 1px solid var(--cinza-claro);
     display: flex;
@@ -20,7 +20,7 @@
     width: 80%;
 }
 
-.container__conteudo-card-img {
+.projetos__card-imagem {
     background-position: center;
     background-size: cover;
     height: 14rem;
@@ -35,13 +35,13 @@
     background-image: url('../img/decodificador.png');
 }
 
-.container__conteudo-card-descricao {
+.projetos__card-texto {
     margin: .8rem auto;
     text-align: center;
     width: 85%;
 }
 
-.card_titulo {
+.projetos__card-titulo {
     border-bottom: 1px solid var(--cinza-claro);
     color: var(--cinza-escuro);
     font-size: 1.4rem ;
@@ -49,18 +49,18 @@
     margin-bottom: .5rem;
 }
 
-.card_descricao {
+.projetos__card-descricao {
     color: var(--cinza-claro); 
     font-size: .8rem;
     line-height: 1.2rem;
 }
 
-.container__conteudo-link {
+.projetos__card-botoes {
     margin-top: 2rem;
     text-align: center;
 }
 
-.link {
+.projetos__card-link {
     border: 1px solid var(--cinza-claro);
     border-radius: 5px;
     color: var(--cinza-escuro);
@@ -69,13 +69,13 @@
     text-decoration: none;
 }
 
-/*RESPONSIVO*/
-
+/*RESPONSIVO TABLET E DESKTOP*/
 @media screen and (min-width: 768px) {
-    .container__conteudo-posts {
+    .projetos {
         margin: 0 .8rem;
     }
-    .container__conteudo-card {
+
+    .projetos__card {
         align-items: center;
         flex-direction: row;
         max-width: none;
@@ -83,61 +83,61 @@
         width: 85%;
     }
 
-    .container__conteudo-card-img {
+    .projetos__card-imagem {
         background-size: contain;
         background-repeat: no-repeat;
         height: 200px;
     }
 
-    .container__conteudo-card-descricao {
+    .projetos__card-texto {
         margin: 0;
         padding: .8rem;
         text-align: start;
         width: 40%;
     }
 
-    .card_descricao {
+    .projetos__card-descricao {
         font-size: .7rem;
         line-height: .8rem;
     }
 
-    .container__conteudo-link {
+    .projetos__card-botoes {
         display: flex;
         justify-content: center;
         margin-top: .8rem;
     }
 
-    .link {
+    .projetos__card-link {
         font-size: .8rem;
         margin: 0 5px;
     }
 
-    .link:hover {
+    .projetos__card-link:hover {
         text-decoration: underline;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .container__conteudo-card {
+    .projetos__card {
         max-width: 700px;
         padding: .5rem;
     }
 
-    .container__conteudo-card-img {
+    .projetos__card-imagem {
         height: 15rem;
     }
 
-    .container__conteudo-card-descricao {
+    .projetos__card-texto {
         padding: 1.2rem;
         text-align: start;
         width: 80%;
     }
 
-    .card_descricao {
+    .projetos__card-descricao {
         line-height: 1rem;
     }
 
-    .container__conteudo-link {
+    .projetos__card-botoes {
         margin-top: 1rem;
     }
 }

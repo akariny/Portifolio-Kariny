@@ -1,15 +1,15 @@
-.container__conteudo-sobre {
+.sobre {
     padding: .5rem 0;
     text-align: center;
 }
 
-.container__conteudo-sobre-titulo {
+.sobre__titulo {
     color: var(--cinza-escuro);
     font-size: 2rem;
     font-weight: 600;
 }
 
-.container__conteudo-sobre-descricao {
+.sobre__descricao {
     color: var(--cinza-claro);
     font-size: .8rem;
     line-height: 1.2rem;
@@ -18,40 +18,39 @@
     width: 90%;
 }
 
-.container__conteudo-sobre-subtitulo {
+/*SKILLS*/
+.sobre__subtitulo {
     color: var(--cinza-escuro);
     font-size:1.5rem ;
     font-weight: 600;
 }
 
-.container__conteudo-skills {
+.skills {
     display: flex;
     justify-content: center;
     margin: .8rem 0;
 }
 
-.container__conteudo-skills-card {
+.skills__card {
     display: flex;
     flex-direction: column;
     margin: 0 .5rem;
 }
 
-.container__conteudo-skills-icone {
+.skills__card-icone {
     height: 4rem;
     transition: 0.5s;
 }
 
-
-
-.skills-icone-legenda {
+.skills__card-legenda {
     color: var(--cinza-claro);
     font-size: .8rem;
     margin-top: .5rem;
 }
 
-/*RESPONSIVO*/
+/*RESPONSIVO TABLET E DESKTOP*/
 @media screen and (min-width: 768px) {
-    .container__conteudo-sobre {
+    .sobre {
         background-color: var(--branco-roxeado);
         border-bottom: 1px dashed lightgrey;
         margin: 0 .8rem;
@@ -59,11 +58,11 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .container__conteudo-sobre-descricao {
+    .sobre__descricao {
         max-width: 600px;
     }
 
-    .container__conteudo-skills-icone:hover {
+    .skills__card-icone:hover {
         height: 4.5rem;
     }
 }

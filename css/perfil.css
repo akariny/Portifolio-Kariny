@@ -1,22 +1,23 @@
-.container__conteudo-perfil {
+.perfil {
     align-items: center;
     display: flex;
     flex-direction: column;
     padding: 1.5rem 0;
 }
 
-.container__conteudo-imagem {
+.perfil__imagem {
     width: 9rem;
 }
 
-.container__conteudo-nome {
+.perfil__nome {
     color: var(--cinza-escuro);
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: .8rem;
 }
 
-.container__conteudo-descricao {
+/*paragrafos*/
+.perfil__descricao {
     border-bottom: 1px solid #b1b3b4;
     color: var(--cinza-claro);
     font-size: .8rem;
@@ -27,37 +28,39 @@
     width: 90%;
 }
 
-.container__conteudo-bio {
+/*emojis com as palavras*/
+.perfil__bio {
     color: var(--cinza-claro);
     display: flex;
     flex-direction: column;
     margin-bottom: .8rem;
 }
 
-.bio-item {
+.perfil__bio-item {
     display: flex;
     margin: .2rem 0;
 }
 
-.bio-palavra {
+.perfil__bio-palavra {
     font-size: .8rem;
     margin-left: 10px;
 }
 
-.container__conteudo-contato {
+/*icones contatos*/
+.perfil__contato {
     display: flex;
 }
-.container__conteudo-icone-contato {
+.perfil__contato-icone {
     margin: 0 .5rem;
     width: 2rem;
 }
 
-.container__conteudo-icone-contato:hover {
+.perfil__contato-icone:hover {
     box-shadow: 1px 1px 5px var(--cinza-claro);
 }
 
 @media screen and (min-width:768px) {
-    .container__conteudo-perfil {
+    .perfil {
         height: auto;
         margin: 0 0 0 .8rem;
         padding-bottom: 0;

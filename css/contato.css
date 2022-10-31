@@ -1,22 +1,23 @@
-.container__contato-titulo {
+.contato {
+    background-color: var(--branco-azulado);
+}
+
+.contato__titulo {
     color: var(--cinza-escuro);
     font-size: 1.2rem;
     font-weight: 600;
     padding: .5rem 0;
     text-align: center;
 }
-.container__contato {
-    background-color: var(--branco-azulado);
-}
 
-.container__contato-itens {
+.contato__itens {
     display: flex;
     gap: 10px;
     justify-content: center;
     padding: 2rem;
 }
 
-.container__contato-img-div {
+.contato__imagem {
     background-image: url('../img/contato.png');
     background-position: center;
     background-size: cover;
@@ -25,7 +26,11 @@
     width: 30%;
 }
 
-.formulario-itens {
+.contato__formulario {
+    width: 100%;
+}
+
+.contato__formulario-itens {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -33,28 +38,28 @@
     padding: 5px;
 }
 
-.formulario_label {
+.contato__formulario-label {
     color: var(--cinza-claro);
     font-size: .8rem;
 }
 
-.formulario_input {
+.contato__formulario-input {
     border: none;
     height: 2rem;
 }
 
-.formulario_textarea {
+.contato__formulario-textarea {
     border: none;
     height: 4rem; 
     resize: none;
 }
 
-.formulario_input:focus, .formulario_textarea:focus {
+.contato__formulario-input:focus, .contato__formulario-textarea:focus {
     border-bottom: 2px solid blue;
     outline: 0;
 }
 
-.formulario-botao {
+.contato__formulario-botao {
     background: transparent;
     border: 1px solid var(--cinza-claro);
     border-radius: 5px;
@@ -62,29 +67,32 @@
     padding: .5rem .8rem;
 }
 
-.formulario-botao:hover {
+.contato__formulario-botao:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
-    .container__contato {
+    .contato {
         background: var(--branco-roxeado);
         margin: 0 .8rem;
     }
 
-    .container__contato-formulario {
+    .contato__formulario {
         width: 100%;
     }
-
 }
 
 @media screen and (min-width: 1024px) {
-    .container__contato-img-div {
+    .contato__imagem {
         display: flex; 
     }
 
-    .container__contato-formulario {
-        width: 60%;
-    }   
+    .contato__formulario {
+        width: 50%;
+    }
+    
+    .contato__formulario-itens {
+        margin: 0 0 15px 0
+    }
 }

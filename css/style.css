@@ -1,11 +1,10 @@
-/*MOBILE FIRST*/
+/*PROJETO FEITO EM MOBILE FIRST*/
 :root {
     --branco-roxeado: #f7f6ff;
     --branco-azulado: #EAF2FD;
     --cinza-claro: #5a5959;
     --cinza-escuro: #323232;
     --bg-pagina: #b1d5ed;
-
     --lato: 'Lato' , sans-serif;
 }
 
@@ -17,22 +16,22 @@ body {
 }
 
 /*DIVISÃO ITENS*/
-.container__conteudo {
+.conteudo {
     display: grid;
     grid-template-rows: auto auto auto 2fr;
     margin-bottom: 2.5rem;
 }
 
-.container__conteudo-perfil {
+.perfil {
     background-color: var(--branco-roxeado);
     height: auto;
 }
 
-.container__conteudo-sobre {
+.sobre {
     background-color: var(--branco-azulado)
 }
 
-.container__conteudo-posts {
+.projetos {
     background-color: var(--branco-roxeado);
     height: auto;
 }
@@ -41,18 +40,18 @@ body {
 /*NO GRID SOMENTE A POSIÇÃO, ITENS EM SEUS RESPECTIVOS ARQUIVOS CSS*/
 
 @media screen and (min-width: 768px) {
-    .container__conteudo {
+    .conteudo {
         grid-template-columns: 1fr 2fr;
         grid-template-rows: none;
     }
 
-    .container__conteudo-perfil {
+    .perfil {
         max-height: 490px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .container__conteudo {
+    .conteudo {
         grid-template-columns: 270px 2fr;
     }
 }
