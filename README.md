@@ -24,4 +24,4 @@
 Acesse ao site <a href="https://akariny.github.io/Portifolio-Kariny/">aqui</a>
 
 - prévia versão desktop 
-<a href="https://imgur.com/sYaXXq6"><img src="https://i.imgur.com/sYaXXq6.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/tF3DORh"><img src="https://i.imgur.com/tF3DORh.png" title="source: imgur.com" /></a>
