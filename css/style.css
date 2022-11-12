@@ -8,6 +8,10 @@
     --lato: 'Lato' , sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-pagina);
     background-image: url('../img/nuvem-branca2.png');

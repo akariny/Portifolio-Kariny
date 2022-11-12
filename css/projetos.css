@@ -22,7 +22,8 @@
 
 .projetos__card-imagem {
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 14rem;
     width: 100%;
 }
@@ -35,10 +36,18 @@
     background-image: url('../img/decodificador.png');
 }
 
+.list {
+    background-image: url('../img/todolist.png');
+}
+
 .projetos__card-texto {
     margin: .8rem auto;
     text-align: center;
     width: 85%;
+}
+
+.projetos__card-textos {
+    height: 80%;
 }
 
 .projetos__card-titulo {
@@ -56,7 +65,7 @@
 }
 
 .projetos__card-botoes {
-    margin-top: 2rem;
+    margin-top: 1.8rem;
     text-align: center;
 }
 
@@ -75,41 +84,9 @@
         margin: 0 .8rem;
     }
 
-    .projetos__card {
-        align-items: center;
-        flex-direction: row;
-        max-width: none;
-        padding: 0 .2rem;
-        width: 85%;
-    }
-
-    .projetos__card-imagem {
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 200px;
-    }
-
-    .projetos__card-texto {
-        margin: 0;
-        padding: .8rem;
-        text-align: start;
-        width: 40%;
-    }
-
-    .projetos__card-descricao {
-        font-size: .7rem;
-        line-height: .8rem;
-    }
-
-    .projetos__card-botoes {
-        display: flex;
-        justify-content: center;
-        margin-top: .8rem;
-    }
-
-    .projetos__card-link {
-        font-size: .8rem;
-        margin: 0 5px;
+    .projetos__cards {
+        margin: 0 auto;
+        max-width: 400px;
     }
 
     .projetos__card-link:hover {
@@ -118,26 +95,24 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .projetos__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: none;
+    }
+    
     .projetos__card {
-        max-width: 700px;
-        padding: .5rem;
+        margin: 20px;
+        width: 200px;
     }
 
     .projetos__card-imagem {
-        height: 15rem;
-    }
-
-    .projetos__card-texto {
-        padding: 1.2rem;
-        text-align: start;
-        width: 80%;
-    }
-
-    .projetos__card-descricao {
-        line-height: 1rem;
+        height: 8rem;
     }
 
     .projetos__card-botoes {
-        margin-top: 1rem;
+        font-size: .5rem;
+        width: 100%;
     }
 }
