@@ -9,6 +9,7 @@
     font-weight: 600;
 }
 
+/*CARDS*/
 .projetos__card {
     background: #FDFDFD;
     border: 1px solid var(--cinza-claro);
@@ -47,7 +48,7 @@
 }
 
 .projetos__card-textos {
-    height: 80%;
+    min-height: 85%;
 }
 
 .projetos__card-titulo {
@@ -59,6 +60,7 @@
 }
 
 .projetos__card-descricao {
+    box-sizing: border-box;
     color: var(--cinza-claro); 
     font-size: .8rem;
     line-height: 1.2rem;
@@ -81,7 +83,7 @@
 /*RESPONSIVO TABLET E DESKTOP*/
 @media screen and (min-width: 768px) {
     .projetos {
-        margin: 0 .8rem;
+        margin: 1rem .8rem;
     }
 
     .projetos__cards {
