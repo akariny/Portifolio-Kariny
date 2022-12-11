@@ -1,0 +1,9 @@
+.--invalido {
+    border-bottom: 1px solid red;
+}
+
+.mensagem-erro {
+    color: red;
+    font-size: .8rem;
+    padding: 5px 0;
+}

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/projetos.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/erros.css">
 </head>
 
 <body>
@@ -196,25 +197,29 @@
                                 <form>
                                     <div class="contato__formulario-itens">
                                         <label for="nome" class="contato__formulario-label">Nome</label>
-                                        <input type="text" id="nome" class="contato__formulario-input" required>
+                                        <input type="text" id="nome" class="contato__formulario-input" data-nome required>
+                                        <span class="mensagem-erro" data-erro-nome></span>
                                     </div>
 
                                     <div class="contato__formulario-itens">
                                         <label for="email" class="contato__formulario-label">Email</label> 
-                                        <input type="email" id="email" class="contato__formulario-input" placeholder="seu@email.com" required>
+                                        <input type="email" id="email" class="contato__formulario-input" data-email placeholder="seu@email.com" required>
+                                        <span class="mensagem-erro" data-erro-email></span>
                                     </div>
 
                                     <div class="contato__formulario-itens">
                                         <label for="assunto" class="contato__formulario-label">Assunto</label> 
-                                        <input type="text" id="assunto" class="contato__formulario-input" required>
+                                        <input type="text" id="assunto" class="contato__formulario-input" data-assunto required>
+                                        <span class="mensagem-erro" data-erro-assunto></span>
                                     </div>
 
                                     <div class="contato__formulario-itens">
                                         <label for="mensagem" class="contato__formulario-label">Mensagem</label> 
-                                        <textarea name="" id="mensagem" class="contato__formulario-textarea" required></textarea>
+                                        <textarea name="" id="mensagem" class="contato__formulario-textarea" data-mensagem required></textarea>
+                                        <span class="mensagem-erro" data-erro-mensagem></span>
                                     </div>
                     
-                                    <input type="submit" value="Enviar" class="contato__formulario-botao">
+                                    <input type="submit" value="Enviar" class="contato__formulario-botao" data-enviar onclick="validaFormulario()">
                                     <input type="reset" value="Limpar" class="contato__formulario-botao">
                                 </form>
                             </div>
@@ -230,4 +235,6 @@
     </footer>
     
 </body>
+
+<script src="/js/formulario.js"></script>
 </html>

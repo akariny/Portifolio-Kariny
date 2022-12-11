@@ -45,17 +45,18 @@
 
 .contato__formulario-input {
     border: none;
+    font-family: var(--lato);
     height: 2rem;
 }
 
 .contato__formulario-textarea {
     border: none;
+    font-family: var(--lato);
     height: 4rem; 
     resize: none;
 }
 
 .contato__formulario-input:focus, .contato__formulario-textarea:focus {
-    border-bottom: 2px solid blue;
     outline: 0;
 }
 
