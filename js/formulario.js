@@ -1,6 +1,3 @@
-// tirar a mensagem padrao da tela
-// refatorar o codigo pq eu achei as funções repetitivas
-
 const nome = document.querySelector('[data-nome]');
 const email = document.querySelector('[data-email]');
 const assunto = document.querySelector('[data-assunto]');
