@@ -10,9 +10,9 @@ function validaFormulario() {
     validaMensagem();
 }
 
-const validaNome = () => {
+nome.onblur = function validaNome() {
     const erroNome = document.querySelector('[data-erro-nome]');
-
+    
     if(nome.value === '') {
         nome.classList.add('--invalido');
         erroNome.innerHTML = 'O campo nome não pode estar vazio!';
@@ -22,7 +22,7 @@ const validaNome = () => {
     }
 }
 
-const validaEmail = () => {
+email.onblur = function validaEmail() {
     const erroEmail = document.querySelector('[data-erro-email]');
 
     if(email.value === '') {
@@ -39,7 +39,7 @@ const validaEmail = () => {
     }
 }
 
-const validaAssunto = () => {
+assunto.onblur = function validaAssunto() {
     const erroAssunto = document.querySelector('[data-erro-assunto]');
 
     if(assunto.value === '') {
@@ -51,7 +51,7 @@ const validaAssunto = () => {
     }
 }
 
-const validaMensagem = () => {
+mensagem.onblur = function validaMensagem() {
     const erroMensagem = document.querySelector('[data-erro-mensagem]');
 
     if(mensagem.value === '') {
