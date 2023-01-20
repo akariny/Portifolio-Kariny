@@ -41,6 +41,10 @@
     background-image: url('../img/todolist.png');
 }
 
+.conversor {
+    background-image: url('../img/conversor.png');
+}
+
 .projetos__card-texto {
     margin: .8rem auto;
     text-align: center;
